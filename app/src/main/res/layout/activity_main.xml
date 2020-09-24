@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#E8F1FF"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome">
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome to us\nA lot of thing are waiting\nfor you"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+        <Button
+            android:id="@+id/btn_signin"
+            style="@style/buttonPrimary"
+            android:layout_marginTop="30dp"
+            android:text="Sign In">
+        </Button>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already don't have an account?">
+        </TextView>
+        <Button
+            android:id="@+id/btn_signup"
+            style="@style/buttonPrimary"
+            android:background="@drawable/button2"
+            android:textColor="@color/blueLight"
+            android:layout_marginTop="30dp"
+            android:text="Create Account">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
